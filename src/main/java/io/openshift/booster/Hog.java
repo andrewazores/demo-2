@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Hog implements Runnable {
     
-    private final int[] array = new int[128 * 512 * 1024];
+    private final int[] array = new int[128 * 150 * 1024];
     
     @Override
     public void run() {
