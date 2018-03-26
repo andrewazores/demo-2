@@ -38,6 +38,16 @@ public class HttpApplication extends AbstractVerticle {
           online = ar.succeeded();
           future.handle(ar.mapEmpty());
         });
+        
+    new Thread(new Hog() {
+        @Override
+        public void run() {
+            super.run();
+            try {
+                Thread.sleep(1000);   
+            } catch (Exception ignored) {}
+        }
+    }).start();
   }
 
   private void stopTheService(RoutingContext rc) {
