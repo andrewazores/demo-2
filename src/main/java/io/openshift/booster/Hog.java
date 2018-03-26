@@ -8,7 +8,7 @@ public class Hog implements Runnable {
     
     @Override
     public void run() {
-        array = new int[128 * 160 * 1024];
+        array = new int[128 * 164 * 1024];
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) Math.floor(Integer.MAX_VALUE * Math.random());
         }
