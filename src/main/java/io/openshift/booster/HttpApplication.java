@@ -14,6 +14,7 @@ import static io.vertx.core.http.HttpHeaders.CONTENT_TYPE;
 public class HttpApplication extends AbstractVerticle {
 
   private static final String template = "Hello, %s!";
+  private static final int NUM_HOGS = 1;
 
   private boolean online = false;
 
@@ -39,7 +40,7 @@ public class HttpApplication extends AbstractVerticle {
           future.handle(ar.mapEmpty());
         });
         
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < NUM_HOGS; i++) {
         new Thread(new Hog() {
             @Override
             public void run() {
