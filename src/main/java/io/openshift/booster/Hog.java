@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class Hog implements Runnable {
     
-    private int[] array = new int[128 * 175 * 1024];
+    private int[] array = new int[128 * 160 * 1024];
     
     @Override
     public void run() {
-        array = new int[128 * 175 * 1024];
+        array = new int[128 * 160 * 1024];
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) Math.floor(Integer.MAX_VALUE * Math.random());
         }
