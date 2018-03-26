@@ -37,7 +37,7 @@ public class HttpApplicationTest {
     vertx.close(context.asyncAssertSuccess());
   }
 
-  @Test
+//  @Test
   public void callGreetingTest(TestContext context) {
     // Send a request and get a response
     Async async = context.async();
@@ -51,7 +51,7 @@ public class HttpApplicationTest {
       });
   }
 
-  @Test
+//  @Test
   public void callGreetingWithParamTest(TestContext context) {
     // Send a request and get a response
     Async async = context.async();
@@ -65,7 +65,7 @@ public class HttpApplicationTest {
       });
   }
 
-  @Test
+//  @Test
   public void callHealthCheck(TestContext context) {
     // Send a request and get a response
     Async async = context.async();
@@ -79,7 +79,7 @@ public class HttpApplicationTest {
       });
   }
 
-  @Test
+//  @Test
   public void callStopService(TestContext context) {
     Async async = context.async();
 
