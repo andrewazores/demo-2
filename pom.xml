@@ -142,7 +142,7 @@
           <resources>
             <labels>
               <all>
-                <space>demo-space</space>
+                <space>test-space</space>
               </all>
             </labels>
           </resources>
